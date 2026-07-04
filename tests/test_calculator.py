@@ -1,6 +1,6 @@
 import pytest
 
-from test_codecov.calculator import add, divide, is_even
+from test_codecov.calculator import add, divide, is_even, multiply
 
 
 def test_add_returns_sum_of_two_numbers():
@@ -27,3 +27,9 @@ def test_divide_rejects_zero_divisor():
 def test_is_even_identifies_even_numbers(number, expected):
     assert is_even(number) is expected
 
+
+def test_multiply_returns_product_of_two_numbers():
+    assert multiply(2, 3) == 6
+    assert multiply(0, 5) == 0
+    assert multiply(5, 0) == 0
+    assert multiply(0, 0) == 0
