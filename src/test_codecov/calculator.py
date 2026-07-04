@@ -25,4 +25,6 @@ def is_odd(number: int) -> bool:
 
 def multiply(left: float, right: float) -> float:
     """Return the product of two numbers."""
+    if left == 0 or right == 0:
+        return 0
     return left * right
