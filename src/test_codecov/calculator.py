@@ -22,3 +22,7 @@ def is_even(number: int) -> bool:
 def is_odd(number: int) -> bool:
     """Return whether an integer is odd."""
     return not is_even(number)
+
+def multiply(left: float, right: float) -> float:
+    """Return the product of two numbers."""
+    return left * right
