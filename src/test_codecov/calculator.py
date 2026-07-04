@@ -18,3 +18,7 @@ def is_even(number: int) -> bool:
     """Return whether an integer is even."""
     return number % 2 == 0
 
+
+def is_odd(number: int) -> bool:
+    """Return whether an integer is odd."""
+    return not is_even(number)
